@@ -24,16 +24,17 @@ public class MovieController {
     public List<Movie> getTheatreMovies() {
         RestTemplate restTemplate = new RestTemplate();
         MovieDB_JSON movieDB_json = restTemplate.getForObject(
-                "https://api.themoviedb.org/3/discover/movie?api_key=d2ab093fe7614910d60e36efd174750a&primary_release_date.gte=2019-09-01&primary_release_date.lte=2019-09-22", MovieDB_JSON.class);
+                "https://api.themoviedb.org/3/movie/now_playing?api_key=d2ab093fe7614910d60e36efd174750a&language=en-US&page=1", MovieDB_JSON.class);
         return movieDB_json.getResults();
     }
 
-    /*
-    @RequestMapping("/upcomingMovies")
+    @RequestMapping(value="/upcoming-movies")
     public List<Movie> getUpcomingMovies() {
-        Sort sortByCreatedAtDesc = new Sort(Sort.Direction.DESC, "createdAt");
-        return todoItemRepository.findAll(sortByCreatedAtDesc);
+        RestTemplate restTemplate = new RestTemplate();
+        MovieDB_JSON movieDB_json = restTemplate.getForObject(
+                "https://api.themoviedb.org/3/movie/upcoming?api_key=d2ab093fe7614910d60e36efd174750a&language=en-US&page=1", MovieDB_JSON.class);
+        return movieDB_json.getResults();
     }
- */
+
 
 }
