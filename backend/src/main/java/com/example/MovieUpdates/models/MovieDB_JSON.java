@@ -3,19 +3,21 @@ package com.example.MovieUpdates.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Arrays;
+import java.util.List;
+
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MovieDB_JSON {
-    private Movie[] results;
+    private List<Movie> results;
     private int total_results;
     private int page;
     private int total_pages;
 
 
-    public Movie[] getResults() {
+    public List<Movie> getResults() {
         return results;
     }
-    public void setResults(Movie[] results) {
+    public void setResults(List<Movie> results) {
         this.results = results;
     }
 
