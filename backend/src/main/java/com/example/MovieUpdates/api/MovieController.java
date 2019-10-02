@@ -20,7 +20,7 @@ public class MovieController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping(value="/movies-in-theatres")
+    @RequestMapping(value="/now-playing-movies")
     public List<Movie> getTheatreMovies() {
         RestTemplate restTemplate = new RestTemplate();
         MovieDB_JSON movieDB_json = restTemplate.getForObject(
