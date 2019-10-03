@@ -6,6 +6,7 @@
         <div class="movie-content">
           <img src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}">
           {{ movie.title }}
+          <br> Release Date: {{ movie.release_date}}
           <span class="movie-text" *ngIf="movie.overview">
             {{ movie.overview }}
           </span>
