@@ -11,6 +11,7 @@ export class UpcomingMoviesListComponent implements OnInit {
 
   movies: Movie[] = [];
 
+
   constructor(private movieService: MoviesService) { }
 
   ngOnInit() {
