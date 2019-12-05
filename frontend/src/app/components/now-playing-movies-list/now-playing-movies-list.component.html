@@ -1,17 +1,23 @@
 <!-- Movies content -->
-<div class="row" style="margin-top: 28px;">
-  <div class="col-md-9">
-    <ul>
-      <li *ngFor="let movie of movies">
-        <div class="movie-content">
-          <img src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}">
-          {{ movie.title }}
-         <br> Release Date: {{ movie.release_date}}
-          <span class="movie-text" *ngIf="movie.overview">
-            {{ movie.overview }}
-          </span>
-        </div>
-      </li>
-    </ul>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,&display=swap" rel="stylesheet">
+</head>
+<div class="row" style="margin-top: 15px;">
+
+  <div id="features-wrapper">
+    <div class="container">
+      <div class="row">
+        <!-- Box -->
+        <section class="movie-content" *ngFor="let movie of movies">
+          <div>
+            <img src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="" />
+            <br>
+            <span>{{ movie.title }}<br>
+            Release Date: {{ movie.release_date}}</span>
+          </div>
+        </section>
+      </div>
+    </div>
   </div>
+
 </div>

@@ -10,7 +10,7 @@ import { Movie } from './models/movie';
 export class MoviesService {
 
   // tslint:disable-next-line: quotemark
-  private baseUrl = "http://localhost:8080/api";
+  private baseUrl = "http://localhost:8081/api";
   private UPCOMING_MOVIES_URL = `${this.baseUrl}/upcoming-movies`;
   private NOW_PLAYING_MOVIES_URL = `${this.baseUrl}/now-playing-movies`;
 

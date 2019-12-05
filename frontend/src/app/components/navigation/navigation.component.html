@@ -1,21 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <i class="fa fa-film text-warning"></i>
-    <span class="text-warning"> Movie updates</span>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/in-theatres">In Theatres</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/upcoming-movies">Upcoming Movies</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container container-nav">
+      <div class="site-title">
+        <h1> <i class="fa fa-film fa-lg"></i> Movie updates</h1>
+      </div>
+      <nav>
+        <ul>
+            <li><a routerLink="/in-theatres">In Theatres</a></li>
+            <li><a routerLink="/upcoming-movies">Upcoming Movies</a></li>
+        </ul>
+      </nav>
+    </div><!--/. container-->
+  </header>
+</body>

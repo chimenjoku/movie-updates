@@ -21,30 +21,3 @@ i {
   vertical-align: middle;
   color: #626262;
 }
-
-input {
-  border: 1px solid #E8E8E8;
-}
-
-.page-title {
-  text-align: center;
-}
-
-.movie-content {
-  font-weight: bold;
-  max-width: 650px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 60px;
-  background-color: #fff;
-  padding: 15px;
-  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-}
-
-.movie-text {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 15px;
-  font-weight: normal;
-
-}
