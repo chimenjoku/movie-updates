@@ -9,11 +9,15 @@ import { NowPlayingMoviesListComponent } from './components/now-playing-movies-l
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { MoviesService } from './movies.service';
+import { MovieComponent } from './components/movie/movie.component';
 
 const appRoutes: Routes = [
   {
     path: 'upcoming-movies',
     component: UpcomingMoviesListComponent
+  },
+  { path: 'movie/:id',
+   component: MovieComponent
   },
   {
     path: 'in-theatres',
@@ -30,7 +34,8 @@ const appRoutes: Routes = [
     AppComponent,
     UpcomingMoviesListComponent,
     NowPlayingMoviesListComponent,
-    NavigationComponent
+    NavigationComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,

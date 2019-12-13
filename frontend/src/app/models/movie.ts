@@ -2,16 +2,12 @@ import { StringMap } from '@angular/compiler/src/compiler_facade_interface';
 
 export class Movie {
   id: string;
-  popularity: string;
-  vote_count: string;
-  vote_average: string;
-  video: boolean;
-  adult: boolean;
-  genre_ids: string[];
   title: string;
-  original_language: string;
-  overview: string;
+  // tslint:disable-next-line: variable-name
   poster_path: string;
+  // tslint:disable-next-line: variable-name
   backdrop_path: string;
+  overview: string;
+  // tslint:disable-next-line: variable-name
   release_date: string;
 }

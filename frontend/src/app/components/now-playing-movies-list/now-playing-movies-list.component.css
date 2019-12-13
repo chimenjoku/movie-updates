@@ -30,3 +30,8 @@ input {
   align-items: stretch;
 }
 
+.row section:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}

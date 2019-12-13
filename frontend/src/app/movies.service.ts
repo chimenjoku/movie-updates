@@ -13,6 +13,8 @@ export class MoviesService {
   private baseUrl = "http://localhost:8081/api";
   private UPCOMING_MOVIES_URL = `${this.baseUrl}/upcoming-movies`;
   private NOW_PLAYING_MOVIES_URL = `${this.baseUrl}/now-playing-movies`;
+  private MOVIE_URL = `${this.baseUrl}/movie/`;
+
 
   constructor(private http: HttpClient) { }
 
@@ -24,6 +26,7 @@ export class MoviesService {
     return this.http.get<Movie[]>(this.NOW_PLAYING_MOVIES_URL);
   }
 
-
-
+  getMovie(id: string): Observable<Movie> {
+    return this.http.get<Movie>(this.MOVIE_URL + id);
+  }
 }

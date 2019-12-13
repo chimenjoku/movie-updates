@@ -13,7 +13,10 @@
             <img src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="" />
             <br>
             <span>{{ movie.title }}<br>
-            Release Date: {{ movie.release_date}}</span>
+            Release Date: {{ movie.release_date}}
+            <a routerLink="/movie/{{movie.id}}">View details &raquo;</a>
+            </span>
+
           </div>
         </section>
       </div>
@@ -21,3 +24,4 @@
   </div>
 
 </div>
+
