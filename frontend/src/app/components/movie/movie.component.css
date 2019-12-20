@@ -2,6 +2,14 @@ img {
     width: 100%;
 }
 
-.m-r-md {
-    margin-right: 5px;
+.col-md-8{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

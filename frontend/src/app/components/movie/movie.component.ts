@@ -18,12 +18,12 @@ export class MovieComponent implements OnInit {
 
   ngOnInit() {
     this.router.params.subscribe((params) => {
-    const id = params.id;
-    this.movieService.getMovie(id).subscribe(movie => {
-      this.movie = movie;
-    });
-
-    });
+      const id = params.id;
+      this.movieService.getMovie(id).subscribe(movie => {
+        this.movie = movie;
+      });
+    // tslint:disable-next-line: semicolon
+    })
   }
 
 }

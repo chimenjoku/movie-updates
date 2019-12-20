@@ -14,7 +14,7 @@ export class MoviesService {
   private UPCOMING_MOVIES_URL = `${this.baseUrl}/upcoming-movies`;
   private NOW_PLAYING_MOVIES_URL = `${this.baseUrl}/now-playing-movies`;
   private MOVIE_URL = `${this.baseUrl}/movie/`;
-
+  private SIMILAR_MOVIE_URL = `${this.baseUrl}/similar-movies/`;
 
   constructor(private http: HttpClient) { }
 
@@ -28,5 +28,9 @@ export class MoviesService {
 
   getMovie(id: string): Observable<Movie> {
     return this.http.get<Movie>(this.MOVIE_URL + id);
+  }
+
+  getSimilarMovies(id: string): Observable<Movie[]> {
+    return this.http.get<Movie[]>(this.SIMILAR_MOVIE_URL + id);
   }
 }

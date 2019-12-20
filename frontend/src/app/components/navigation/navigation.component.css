@@ -1,6 +1,9 @@
-body{
+nav{
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  background: rgb(199, 242, 248);
+  padding: 2em 0;
 
 }
 .container{
@@ -20,11 +23,6 @@ body{
   }
 }
 
-header{
-  text-align: center;
-  background: rgb(199, 242, 248);
-  padding: 2em 0;
-}
 h1{
   font-family:'Lora', serif;
   font-weight: 400;
@@ -32,7 +30,7 @@ h1{
   font-size: 2rem;
 }
 
-nav ul {
+nav ul{
   list-style: none;
   display: flex;
   padding: 0;
@@ -53,4 +51,12 @@ nav a{
 nav a:hover,
 nav a:focus{
   color: #1792d2
+}
+
+.active{
+  border-bottom: 1.5px solid  #707070;
+}
+
+.active:hover{
+  color: #707070;
 }
