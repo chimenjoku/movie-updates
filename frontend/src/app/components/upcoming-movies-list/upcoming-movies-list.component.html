@@ -1,0 +1,26 @@
+<!-- Movies content -->
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,&display=swap" rel="stylesheet">
+</head>
+<div class="row" style="margin-top: 20px;">
+
+  <div id="features-wrapper">
+    <div class="container">
+      <div class="row">
+        <!-- Box -->
+        <section class="movie-content" *ngFor="let movie of movies">
+          <div>
+            <img src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="" />
+            <br>
+            <span>{{ movie.title }}<br>
+              Release Date: {{ movie.release_date}}
+              <a routerLink="/movie/{{movie.id}}">View details &raquo;</a>
+            </span>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</div>

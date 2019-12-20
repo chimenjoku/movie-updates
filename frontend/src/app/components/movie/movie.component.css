@@ -1,0 +1,15 @@
+img {
+    width: 100%;
+}
+
+.col-md-8{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
