@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class MovieUpdatesApplication {
+public class MovieUpdatesApplication extends SpringBootServletInitializer {
 
 	private static final Logger log = LoggerFactory.getLogger(MovieUpdatesApplication.class);
 	@Bean
